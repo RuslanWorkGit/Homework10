@@ -42,6 +42,7 @@ extension MainPlaylistViewController: MainPlaylistViewDelegate {
 }
 
 extension MainPlaylistViewController: UITableViewDataSource {
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return model.items.count
@@ -55,6 +56,10 @@ extension MainPlaylistViewController: UITableViewDataSource {
         }
         
         cell.textLabel?.text = model.items[indexPath.row].songTitle
+        cell.detailTextLabel?.numberOfLines = 0
+        cell.detailTextLabel?.text = "Author - \(model.items[indexPath.row].author)\n" + "Album title - \(model.items[indexPath.row].albumTitle)\n" + "Genre - \(model.items[indexPath.row].genre)"
+        
+        
         
         return cell
     }

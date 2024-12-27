@@ -11,12 +11,12 @@
         <!--Playlist Move Delete View Controller-->
         <scene sceneID="w5f-ua-ysV">
             <objects>
-                <viewController storyboardIdentifier="PlaylistMoveDeleteViewController" id="dLd-Lu-eVv" customClass="PlaylistMoveDeleteViewController" customModule="Lesson12HW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlaylistMoveDeleteViewController" id="dLd-Lu-eVv" customClass="PlaylistMoveDeleteViewController" customModule="HomeWork10UK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BWO-6T-SF5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xl-np-Ryr" customClass="PlaylistMoveDeleteView" customModule="Lesson12HW" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xl-np-Ryr" customClass="PlaylistMoveDeleteView" customModule="HomeWork10UK" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DfL-1r-pn6">
@@ -82,12 +82,12 @@
         <!--Initial View Controller-->
         <scene sceneID="qCf-Ao-TVa">
             <objects>
-                <viewController storyboardIdentifier="InitialViewController" id="719-2c-Mji" customClass="InitialViewController" customModule="Lesson12HW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InitialViewController" id="719-2c-Mji" customClass="InitialViewController" customModule="HomeWork10UK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gr2-wO-VSL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pwo-0d-OpA" customClass="InitialView" customModule="Lesson12HW" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pwo-0d-OpA" customClass="InitialView" customModule="HomeWork10UK" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="ayq-Gx-Ia3" userLabel="Title Stack View">
@@ -143,12 +143,12 @@
         <!--Main Playlist View Controller-->
         <scene sceneID="0h9-Xt-8ia">
             <objects>
-                <viewController storyboardIdentifier="MainPlaylistViewController" id="oNK-6w-5iG" customClass="MainPlaylistViewController" customModule="Lesson12HW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainPlaylistViewController" id="oNK-6w-5iG" customClass="MainPlaylistViewController" customModule="HomeWork10UK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DYi-uM-gPz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FzO-3q-sKd" customClass="MainPlaylistView" customModule="Lesson12HW" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FzO-3q-sKd" customClass="MainPlaylistView" customModule="HomeWork10UK" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LD2-wa-um1">
@@ -214,12 +214,12 @@
         <!--Playlist By Genre View Controller-->
         <scene sceneID="eS3-cX-upD">
             <objects>
-                <viewController storyboardIdentifier="PlaylistByGenreViewController" id="F1G-gX-hHk" customClass="PlaylistByGenreViewController" customModule="Lesson12HW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlaylistByGenreViewController" id="F1G-gX-hHk" customClass="PlaylistByGenreViewController" customModule="HomeWork10UK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gvq-do-UCL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uFc-4m-4Jc" customClass="PlaylistByGenreView" customModule="Lesson12HW" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uFc-4m-4Jc" customClass="PlaylistByGenreView" customModule="HomeWork10UK" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CbD-iy-G4i">
@@ -285,12 +285,12 @@
         <!--Main View Controller-->
         <scene sceneID="Vyc-Fa-aBy">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="6VK-av-iVg" customClass="MainViewController" customModule="Lesson12HW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="6VK-av-iVg" customClass="MainViewController" customModule="HomeWork10UK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yhh-DC-ylF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="102-My-7Rd" customClass="MainView" customModule="Lesson12HW" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="102-My-7Rd" customClass="MainView" customModule="HomeWork10UK" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fwL-hX-VPK">
@@ -349,12 +349,12 @@
         <!--Playlist Delete View Controller-->
         <scene sceneID="v2G-A8-q3A">
             <objects>
-                <viewController storyboardIdentifier="PlaylistDeleteViewController" id="UNR-dw-nmi" customClass="PlaylistDeleteViewController" customModule="Lesson12HW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlaylistDeleteViewController" id="UNR-dw-nmi" customClass="PlaylistDeleteViewController" customModule="HomeWork10UK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rPl-qf-FG4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihu-ZA-cm0" customClass="PlaylistDeleteView" customModule="Lesson12HW" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihu-ZA-cm0" customClass="PlaylistDeleteView" customModule="HomeWork10UK" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="k04-Bo-462">
@@ -420,12 +420,12 @@
         <!--Playlist Modes View Controller-->
         <scene sceneID="h1c-ZS-MLK">
             <objects>
-                <viewController storyboardIdentifier="PlaylistModesViewController" id="cgA-9I-8HF" customClass="PlaylistModesViewController" customModule="Lesson12HW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlaylistModesViewController" id="cgA-9I-8HF" customClass="PlaylistModesViewController" customModule="HomeWork10UK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lhg-ad-BRn">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tOs-Y7-ucH" customClass="PlaylistModesView" customModule="Lesson12HW" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tOs-Y7-ucH" customClass="PlaylistModesView" customModule="HomeWork10UK" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LNE-HG-cSn">
