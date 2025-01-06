@@ -17,11 +17,13 @@ class PlaylistByGenreModel {
     
     private let dataLoader = DataLoaderService()
     
-    var items: [Song] = []
+    var groupedItems: [String: [Song]] = [:]
+    var genres: [String] { groupedItems.keys.sorted() }
     
     func loadData() {
         dataLoader.loadPlaylist { playlist in
-            self.items = playlist?.songs ?? []
+            let songs = playlist?.songs ?? []
+            self.groupedItems = Dictionary(grouping: songs, by: { $0.genre })
             self.delegate?.dataDidLoad()
         }
     }

@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class PlaylistByGenreViewController: UIViewController {
     
     @IBOutlet weak var contentView: PlaylistByGenreView!
@@ -47,8 +48,14 @@ extension PlaylistByGenreViewController: UITableViewDelegate {
 }
 
 extension PlaylistByGenreViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        model.genres.count
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        model.items.count
+        let genre = model.genres[section]
+        return model.groupedItems[genre]?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -57,10 +64,18 @@ extension PlaylistByGenreViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
-        cell.textLabel?.text = model.items[indexPath.row].songTitle
-        cell.detailTextLabel?.numberOfLines = 0
-        cell.detailTextLabel?.text = "Author - \(model.items[indexPath.row].author)\n" + "Album title - \(model.items[indexPath.row].albumTitle)\n" + "Genre - \(model.items[indexPath.row].genre)\n"
+        let genre = model.genres[indexPath.section]
+        if let song = model.groupedItems[genre]?[indexPath.row] {
+            cell.textLabel?.text = song.songTitle
+            cell.detailTextLabel?.numberOfLines = 0
+            cell.detailTextLabel?.text = "Author - \(song.author)\n" + "Album title - \(song.albumTitle)\n"
+        }
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        model.genres[section]
     }
     
     
