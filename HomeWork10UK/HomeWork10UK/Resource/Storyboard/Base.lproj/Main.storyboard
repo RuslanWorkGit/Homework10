@@ -426,10 +426,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tOs-Y7-ucH" customClass="PlaylistModesView" customModule="HomeWork10UK" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="768"/>
                                 <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uwW-61-843">
+                                        <rect key="frame" x="16" y="50" width="361" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="hGd-pL-DmF"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="All"/>
+                                            <segment title="Genre"/>
+                                            <segment title="Author"/>
+                                        </segments>
+                                    </segmentedControl>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LNE-HG-cSn">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                                        <rect key="frame" x="0.0" y="100" width="393" height="668"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MainPlaylistCell" textLabel="vFh-fD-Ljk" detailTextLabel="Sjw-rk-jyG" style="IBUITableViewCellStyleSubtitle" id="2Ci-VV-Xt0">
@@ -462,11 +473,15 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="LNE-HG-cSn" secondAttribute="bottom" id="AKD-lf-nlB"/>
-                                    <constraint firstItem="LNE-HG-cSn" firstAttribute="top" secondItem="tOs-Y7-ucH" secondAttribute="top" id="hYp-fM-YrW"/>
+                                    <constraint firstAttribute="trailing" secondItem="uwW-61-843" secondAttribute="trailing" constant="16" id="Scf-L3-day"/>
+                                    <constraint firstItem="LNE-HG-cSn" firstAttribute="top" secondItem="tOs-Y7-ucH" secondAttribute="top" constant="100" id="hYp-fM-YrW"/>
+                                    <constraint firstItem="uwW-61-843" firstAttribute="leading" secondItem="tOs-Y7-ucH" secondAttribute="leading" constant="16" id="kl0-tW-NGW"/>
+                                    <constraint firstItem="LNE-HG-cSn" firstAttribute="top" secondItem="uwW-61-843" secondAttribute="bottom" constant="8" id="oeT-lp-n7G"/>
                                     <constraint firstItem="LNE-HG-cSn" firstAttribute="leading" secondItem="tOs-Y7-ucH" secondAttribute="leading" id="tBh-xf-rhe"/>
                                     <constraint firstAttribute="trailing" secondItem="LNE-HG-cSn" secondAttribute="trailing" id="tTG-xu-sOv"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="sectionSegmentController" destination="uwW-61-843" id="Dm6-DK-oMu"/>
                                     <outlet property="tableView" destination="LNE-HG-cSn" id="rDZ-a1-aHX"/>
                                 </connections>
                             </view>
@@ -475,7 +490,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tOs-Y7-ucH" firstAttribute="trailing" secondItem="nch-VG-4Tc" secondAttribute="trailing" id="47c-Zz-Epl"/>
-                            <constraint firstItem="tOs-Y7-ucH" firstAttribute="top" secondItem="Lhg-ad-BRn" secondAttribute="top" id="7C2-EZ-puW"/>
+                            <constraint firstItem="tOs-Y7-ucH" firstAttribute="top" secondItem="Lhg-ad-BRn" secondAttribute="top" constant="50" id="7C2-EZ-puW"/>
                             <constraint firstItem="tOs-Y7-ucH" firstAttribute="leading" secondItem="nch-VG-4Tc" secondAttribute="leading" id="Ntk-xP-Wc6"/>
                             <constraint firstItem="nch-VG-4Tc" firstAttribute="bottom" secondItem="tOs-Y7-ucH" secondAttribute="bottom" id="TF6-4v-zdC"/>
                         </constraints>
